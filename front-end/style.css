@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
   -webkit-box-sizing: border-box;
@@ -15,27 +15,31 @@
 
 .human.botui-message-content.text {
 	background: white;
-	color: rgb(48, 41, 58);
+	color: #0779e4;
 }
 
 .botui-message-content {
 	font-size: 18px;
 	font-size: 1rem;
-	font-family: 'Montserrat';
-	background: rgb(48, 41, 58);
+  font-family: 'Open Sans';
+	background: #0779e4;
 	color: white;
 }
 
 .botui-messages-container {
-	max-height: 55vh;
+	max-height: 80vh;
 	overflow-y: auto;
 }
-
+h1 {
+  font-size: 50px;
+  color: white;
+}
 .botui-actions-buttons-button {
-	background-color: rgb(95, 175, 226);
+	background-color: white;
+  color: #0779e4;
 	font-size: 21.599px;
 	font-size: 1.2rem ;
-	font-family: 'Montserrat';
+	font-family: 'Open Sans';
 	font-weight: bold;
 	-webkit-transition: 300ms ease-in-out;
 	transition: 300ms ease-in-out
@@ -50,13 +54,17 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 
 .botui-actions-text-input {
-	color: #CDACE0;
-	font-size: 21.599px;
-	font-size: 1.2rem ;
+	color: white;
+	font-size: 25.599px;
+	font-size: 2.5rem ;
 	border-bottom: solid 2px currentColor;
-	font-family: 'Montserrat';
+  font-family: 'Open Sans';
 	font-weight: bold;
 	-webkit-transition: 300ms ease-in-out;
 	transition: 300ms ease-in-out
@@ -81,9 +89,9 @@ body {
   margin: 0 auto;
 	font-size: 18px;
 	font-size: 1rem;
-  font-family: 'Montserrat';
-  background-color:  #40364D;
-  color: #FFFFFF;
+  font-family: 'Open Sans';
+  background-color:  #222831;
+  color: #0779e4;
 }
 
 header {
