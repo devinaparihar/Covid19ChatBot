@@ -33,10 +33,16 @@ function chat() {
         sub_type: 'text',
         placeholder: 'What are the symptoms of COVID-19?' }
   }).then(() => {
-    return botui.message.bot({ // second one
+    $.get('http://127.0.0.1:5000/topic/test', function(response){
+      return botui.message.bot({ // second one
+        delay: 500,
+        loading: true,
+        content: "You're asking a question related to " + response + "; is that correct?" });
+      });
+    /*return botui.message.bot({ // second one
       delay: 500,
       loading: true,
-      content: "You're asking a question related to COVID-19 symptoms; is that correct?" });
+      content: "You're asking a question related to COVID-19 symptoms; is that correct?" });*/
   }).then(() => {
     return botui.action.button({ // let user choose something
       delay: 300,
