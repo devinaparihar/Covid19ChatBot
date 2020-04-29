@@ -10,7 +10,7 @@ CORS(app)
 
 model = joblib.load('../SavedTopicModels/nmf500k_18topics')
 '''tfidf = joblib.load('../SavedTopicModels/tfidf')'''
-tfidf_vec = joblib.load('../tfidf_vec2')
+tfidf_vec = joblib.load('../SavedTopicModels/tfidf_vec2')
 
 @app.route('/topic/<input>')
 def topic(input):
